@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<title>TITLE</title>
+		<link media="all" rel="stylesheet" href="style.css">
+		<script async type="module" src="js/order.js"></script>
+	</head>
+	<body class="body-order">
+		<div class="body-overlay"></div>
+		<!--catalog-page-->
+		<header class="order-header">
+			<div class="header__row">
+				<div class="header__container">
+					<div class="header__logo"> <img class="header__logo-img" src="images/main/header__logo.svg" alt=""></div>
+					<div class="header_help-item"><img class="header__help-handset" src="images/footer/help_handset.svg" alt=""><span class="header__help-title">Помощь</span><img class="header__help-arrow" src="images/footer/help-arrow.svg" alt="">
+						<div class="contacts contacts_header contacts_header_dropdown">
+							<ul class="contacts__list">
+								<li class="contacts__item"> <img src="images/contacts/contacts__whatsapp-icon.svg" alt=""><a class="contacts__title" href="#">Чат на сайте</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__viber-icon.svg" alt=""><a class="contacts__title" href="#">Viber</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__telegram-icon.svg" alt=""><a class="contacts__title" href="#">Telegram</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title contacts__title_flex" href="#">0-800-750-849<span class="contacts__descr">
+											c 8:00 до 22:00(пн-вс)Бесплатно с любого оператора</span></a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--catalog-page-->
+		<main class="order-main">
+			<div class="container-native">
+				<h1 class="order-title">Оформление заказа</h1>
+				<div class="order">
+					<div class="order__col">
+						<div class="order__row">
+							<div class="order__progress">
+								<div class="order__progress-stage">
+									<div class="order__progress-circle"><span class="order__progress-title">1</span></div>
+								</div>
+							</div>
+							<form class="order__personal-data" action="#">
+								<div class="order__title-holder">
+									<h2 class="order__title">Ваши данные</h2>
+									<div class="order__completed"><span class="order__completed-body">Харьков,Доставка в отделение/почтомат “Новая почта” ,№5 отделение ул.Фкадемика Павлова</span><span class="order__completed-button">Изменить</span></div>
+								</div>
+								<div class="order__user-sel">
+									<input id="order__user-new" type="radio" name="user-sel">
+									<label class="order__user-label" for="order__user-new">Я новый покупатель</label>
+									<input id="order__user-regular" type="radio" name="user-sel">
+									<label class="order__user-label" for="order__user-regular">Я постоянный покупатель</label>
+								</div>
+								<input class="order__input" id="order__input_first-name" type="text" name="order__first-name" placeholder="Имя">
+								<input class="order__input" id="order__input_last-name" type="text" name="order__last-name" placeholder="Фамилия">
+								<input class="order__input" id="order__input_email" type="text" name="order__email" placeholder="E-mail">
+								<input class="order__input" id="order__input_phone" type="text" name="order__phone" placeholder="Телефон">
+								<button id="order__submit" type="button">Продолжить</button>
+							</form>
+						</div>
+						<div class="order__row">
+							<div class="order__progress">
+								<div class="order__progress-stage">
+									<div class="order__progress-circle"><span class="order__progress-title">2</span></div>
+								</div>
+							</div>
+							<form class="order__delivery" action="#">
+								<div class="order__title-holder">
+									<h2 class="order__title">Способ доставки</h2>
+									<div class="order__completed"><span class="order__completed-body">Харьков,Доставка в отделение/почтомат “Новая почта” ,№5 отделение ул.Фкадемика Павлова</span><span class="order__completed-button">Изменить</span></div>
+								</div>
+								<div class="order__delivery-sel">
+									<div class="order__delivery-item">
+										<input id="order__new-post" type="radio" name="delivery-sel">
+										<label class="order__delivery-label" for="new-post">Новая почта
+											<div class="order__descr"><img class="order__descr-icon" src="images/order/descr-icon.svg" alt=""><span class="order__descr-text">Доставка семян за границу осуществляется только в стелс-упаковке</span></div>
+										</label>
+									</div>
+									<div class="order__delivery-item">
+										<input id="order__ukr-post" type="radio" name="delivery-sel">
+										<label class="order__delivery-label" for="ukr-post">Укрпочта
+											<div class="order__descr"><img class="order__descr-icon" src="images/order/descr-icon.svg" alt=""><span class="order__descr-text">Доставка семян за границу осуществляется только в стелс-упаковке</span></div>
+										</label>
+									</div>
+									<div class="order__delivery-item">
+										<input id="order__ukr-post-international" type="radio" name="delivery-sel">
+										<label class="order__delivery-label" for="ukr-post-international">Укрпочта международная
+											<div class="order__descr"><img class="order__descr-icon" src="images/order/descr-icon.svg" alt=""><span class="order__descr-text">Доставка семян за границу осуществляется только в стелс-упаковке</span></div>
+										</label>
+									</div>
+								</div>
+								<input class="order__input" id="order__area" type="text" name="order__area" list="order__area-list" placeholder="Ваша область">
+								<datalist id="order__area-list">
+									<option class="order__area-option" value="Харьковская"></option>
+									<option class="order__area-option" value="Херсонская"></option>
+								</datalist>
+								<input class="order__input" id="order__city" type="text" name="order__area" placeholder="Ваш город">
+								<div class="order__post-office">
+									<input class="order__input" id="order__post" type="text" name="order__post" placeholder="Укажите отделение">
+								</div>
+								<div class="order__package">
+									<input id="order__package-checkbox" type="checkbox" name="order__package">
+									<label class="order__package-label" for="order__package">Телс упаковка</label>
+									<div class="order__descr"><img class="order__descr-icon" src="images/order/descr-icon.svg" alt=""><span class="order__descr-text">Доставка семян за границу осуществляется только в стелс-упаковке</span></div>
+								</div>
+								<button id="order__delivery-submit" type="button">Продолжить</button>
+							</form>
+						</div>
+						<div class="order__row">
+							<div class="order__progress">
+								<div class="order__progress-stage">
+									<div class="order__progress-circle"><span class="order__progress-title">3</span></div>
+								</div>
+							</div>
+							<form class="order__payment" action="#">
+								<div class="order__title-holder">
+									<h2 class="order__title">Способ доставки</h2>
+									<div class="order__completed"><span class="order__completed-body">Харьков,Доставка в отделение/почтомат “Новая почта” ,№5 отделение ул.Фкадемика Павлова</span><span class="order__completed-button">Изменить</span></div>
+								</div>
+								<div class="order__payment-holder">
+									<div class="order__payment-item">
+										<input class="order__payment-radio" type="radio" name="order__payment">
+										<label class="order__payment-label" for="order__payment">Наложенный платеж<span class="order__payment-descr">Наложеный платеж возможен при сумме заказа от 400.00 грн</span></label>
+									</div>
+									<div class="order__payment-item">
+										<input class="order__payment-radio" type="radio" name="order__payment">
+										<label class="order__payment-label" for="order__payment">Оплата на карту<span class="order__payment-descr">Номер счёта Вам будет выслан на e-mail указанный в Вашей контактной информации.</span></label>
+									</div>
+									<div class="order__payment-item">
+										<input class="order__payment-radio" type="radio" name="order__payment">
+										<label class="order__payment-label" for="order__payment">Qiwi<span class="order__payment-descr">Номер Qiwi-кошелька будет выслан на e-mail указанный в Вашей контактной информации.</span></label>
+									</div>
+									<div class="order__payment-item">
+										<input class="order__payment-radio" type="radio" name="order__payment">
+										<label class="order__payment-label" for="order__payment">WebMoney<span class="order__payment-descr">Вы получите реквизиты для оплаты после оформления заказа</span></label>
+									</div>
+								</div>
+								<button id="order__payment-submit" type="button">Заказ подтверждаю</button>
+							</form>
+						</div>
+					</div>
+					<div class="order__col">
+						<div class="order-products">
+							<div class="order-products__head">
+								<h2 class="order-products__head-title">Товары</h2>
+								<div class="order-products__close-icon"></div>
+							</div>
+							<div class="order-products__warn"> <span class="order-products__warn-body">Наложеный платеж возможен при сумме заказа от 400.00грн</span></div>
+							<div class="order-products__item"> <img class="order-products__img" src="images/order/product-thumb.jpg" alt="">
+								<div class="order-products__body"><span class="order-products__title">Power Well Grow</span>
+									<div class="order-products__descr"><span class="order-products__manufacturer">Well Grow</span><span class="order-products__count">Обьем в литрах: 0,1 л </span></div>
+									<div class="order-products__amount">
+										<button class="order-products_btn order-products_btn_minus" type="button">-</button>
+										<input class="order-products__amount-input" type="number" name="" readonly="true" value="2">
+										<button class="order-products_btn order-products_btn_plus" type="button">+</button>
+									</div>
+								</div>
+								<div class="order-products__end-holder">
+									<div class="order-products__remove-item">
+												<svg class="order-products__remove-icon" xmlns="http://www.w3.org/2000/svg" width="18px" height="20px" viewBox="0 0 18 20">
+													<use xlink:href="images/svg-sprites.svg#order-products__remove-icon" href="images/svg-sprites.svg#order-products__remove-icon"></use>
+												</svg>
+									</div><span class="order-products__price">110.00 грн</span>
+								</div>
+							</div>
+							<div class="order-products__item"><img class="order-products__img" src="images/order/product-thumb.jpg" alt="">
+								<div class="order-products__body"><span class="order-products__title">Power Well Grow</span>
+									<div class="order-products__descr"><span class="order-products__manufacturer">Well Grow</span><span class="order-products__count">Обьем в литрах: 0,1 л </span></div>
+									<div class="order-products__amount">
+										<button class="order-products_btn order-products_btn_minus" type="button">-</button>
+										<input class="order-products__amount-input" type="number" name="" readonly="true" value="2">
+										<button class="order-products_btn order-products_btn_plus" type="button">+</button>
+									</div>
+								</div>
+								<div class="order-products__end-holder">
+									<div class="order-products__remove-item">
+												<svg class="order-products__remove-icon" xmlns="http://www.w3.org/2000/svg" width="18px" height="20px" viewBox="0 0 18 20">
+													<use xlink:href="images/svg-sprites.svg#order-products__remove-icon" href="images/svg-sprites.svg#order-products__remove-icon"></use>
+												</svg>
+									</div><span class="order-products__price">110.00 грн</span>
+								</div>
+							</div>
+							<div class="order-products__summary">
+								<div class="order-products__summary-row"><span class="order-products__summary-summ">Сумма:</span><span class="order-products__summary-count">120.00 грн</span></div>
+								<div class="order-products__summary-row"><span class="order-products__summary-post">Новая почта:</span><span class="order-products__summary-tax">0.00 грн</span></div>
+								<div class="order-products__summary-row"><span class="order-products__summary-total">Итого:</span><span class="order-products__summary-cost">129.00 грн</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__row">
+				<div class="container">
+					<div class="footer__subscription"><span class="footer__subscription-descr">Подписывайся, чтобы первым узнать про акции и выгодные предложения</span>
+						<div class="footer__subscription-holder"> 
+							<input class="footer__subscription-input" type="text" name="subscription" placeholder="Email">
+							<button class="footer__subscription-submit" type="submit">Подпишись</button>
+						</div>
+						<div class="footer__socials">
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/facebook_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/instagram_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/telegram_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/viber_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/youtube_icon.svg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__row footer__row_middle">
+				<div class="container container_middle">
+					<div class="footer__about"> 
+						<div class="footer__logo"><img class="footer__logo-img" src="images/footer/footer__logo.svg" alt=""></div>
+						<div class="footer__help"><a class="footer__contact-us" href="#">Связь с директором</a>
+							<div class="footer_help-item"><img class="footer__help-handset" src="images/footer/help_handset.svg" alt=""><span class="footer__help-title">Помощь и консультация</span><img class="footer__help-arrow" src="images/footer/help-arrow.svg" alt="">
+								<div class="contacts contacts_footer">
+									<ul class="contacts__list">
+										<li class="contacts__item"> <img src="images/contacts/contacts__whatsapp-icon.svg" alt=""><a class="contacts__title" href="#">Чат на сайте</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__viber-icon.svg" alt=""><a class="contacts__title" href="#">Viber</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__telegram-icon.svg" alt=""><a class="contacts__title" href="#">Telegram</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title contacts__title_flex" href="#">0-800-750-849<span class="contacts__descr">
+													c 8:00 до 22:00(пн-вс)Бесплатно с любого оператора</span></a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="footer__nav">
+						<div class="footer__nav-item"><span class="footer_nav-title">Информация о компании</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">О магазине</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Закон</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Бонусная программа</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Сотрудничество</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item"><span class="footer_nav-title">Помощь</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Контакты</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Новости</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Доставка</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Оплата</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item"><span class="footer_nav-title">Сервисы</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Форум</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Медицина</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Лампы</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="footer__row footer__row_bottom">
+				<div class="container container_bottom"><span class="footer__copyright">ⓒ Errors Seeds Company 2009-2022</span>
+					<div class="footer__credits"><img class="footer__credits-item" src="images/footer/credits/visa.png" alt=""><img class="footer__credits-item" src="images/footer/credits/maestro.png" alt=""><img class="footer__credits-item" src="images/footer/credits/mastercard.png" alt=""><img class="footer__credits-item" src="images/footer/credits/paypal.png" alt=""><img class="footer__credits-item" src="images/footer/credits/webmoney.png" alt=""></div><span class="footer__policy">Политика конфиденциальности</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

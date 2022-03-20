@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<title>TITLE</title>
+		<link media="all" rel="stylesheet" href="style.css">
+		<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+		<script async type="module" src="js/catalog.js"></script>
+	</head>
+	<body class="catalog-body">
+		<div class="body-overlay"></div>
+		<!--catalog-page-->
+		<header class="header"> 
+			<div class="header__banner"> <img class="header__banner-img" src="images/main/header__banner.jpg" alt=""></div>
+			<div class="header__row header__row_first">
+				<div class="header__container header__container_top">
+					<div class="header__logo"> <img class="header__logo-img" src="images/main/header__logo.svg" alt=""></div>
+					<div class="header__activity">
+						<ul class="header__activity-list"> 
+							<li class="header__activity-item"><a class="header__activity-link" href="#">О магазине  </a></li>
+							<li class="header__activity-item"><a class="header__activity-link" href="#">Закон</a></li>
+							<li class="header__activity-item"><a class="header__activity-link" href="#">Новости</a></li>
+							<li class="header__activity-item header__activity-item_arrow"><span class="header__activity-link">Сотрудничество</span>
+								<ul class="header__cooperation-dropdown">
+									<li class="header__cooperation-item header__cooperation-item_first"><a class="header__cooperation-link" href="#">О сотрудничестве</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Оптовые продажи</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Дистрибьюция</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Реферальная программа</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Интересный контент</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Вакансии</a></li>
+									<li class="header__cooperation-item"><a class="header__cooperation-link" href="#">Дропшиппинг</a></li>
+									<li class="header__cooperation-item header__cooperation-item_last"><a class="header__cooperation-link" href="#">SMM</a></li>
+								</ul>
+							</li>
+							<li class="header__activity-item"><a class="header__activity-link" href="#">Бонусная программа</a></li>
+							<li class="header__activity-item header__activity-item_arrow"><span class="header__activity-link">Rus</span>
+								<ul class="header__lang-dropdown">
+									<li class="header__lang-item"><a class="header__lang-link" href="#">Ukr</a></li>
+									<li class="header__lang-item header__lang-item_last"><a class="header__lang-link" href="#">Eng</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__row">
+				<div class="header__container header__container_bottom">
+					<div class="nav">
+						<div class="nav__burger-mobile"><img class="nav__mobile-logo-img" src="images/main/header__burger-mobile.svg" alt=""></div>
+						<div class="nav__logo-mobile"><img class="nav__logo-mobile-img" src="images/main/header__logo.svg" alt=""></div>
+						<div class="nav__wrapper">
+							<div class="nav__burger"><span></span></div><span class="nav__title">Каталог товаров  </span>
+						</div>
+						<ul class="nav__list">
+							<div class="nav__mobile-head"> <img class="nav__logo-mobile-img" src="images/main/header__logo.svg" alt="">
+								<div class="nav__lang"><span class="nav__lang-title">Rus</span>
+									<ul class="nav__lang-dropdown">
+										<li class="nav__lang-item">Ukr</li>
+										<li class="nav__lang-item nav__lang-item_last">Eng</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="nav__authorization">
+								<li class="nav__authorization-item-login"><img class="nav__authorization-icon" src="images/main/header__account-icon.svg" alt=""><span class="nav__authorization-title">Войти </span></li>
+								<li class="nav__authorization-item-registration"><span class="nav__authorization-title">Регистрация</span></li>
+							</ul>
+							<li class="nav__item nav__item_new nav__item_first"><a class="nav__item-link" href="#">Lorem ipsum</a></li>
+							<li class="nav__item nav__item_new"><a class="nav__item-link" href="#">Lorem ipsum</a></li>
+							<li class="nav__item nav__item_icon"> <a class="nav__item-link" href="#">Сидбанки</a>
+								<div class="nav__dropdown"> 
+									<div class="dropdown-head">
+										<div class="dropdown-head__backward"><img class="dropdown__backward-icon" src="images/main/dropdown__backward.svg" alt=""></div>
+										<div class="dropdown-head__close"><img class="dropdown__close-icon" src="images/main/dropdown__close.svg" alt=""></div>
+									</div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Errors Seed Silver</a>
+										<ul class="nav__subdropdown">
+											<div class="dropdown-head">
+												<div class="dropdown-head__backward"><img class="dropdown__backward-icon" src="images/main/dropdown__backward.svg" alt=""></div>
+												<div class="dropdown-head__close"><img class="dropdown__close-icon" src="images/main/dropdown__close.svg" alt=""></div>
+											</div>
+											<li class="nav__subdropdown-item nav__dropdown-item_arrow"><a class="nav__subdropdown-link" href="#">Errors Seeds Silver Auto</a>
+												<ul class="nav__subdropdown-second">
+													<div class="dropdown-head">
+														<div class="dropdown-head__backward"><img class="dropdown__backward-icon" src="images/main/dropdown__backward.svg" alt=""></div>
+														<div class="dropdown-head__close"><img class="dropdown__close-icon" src="images/main/dropdown__close.svg" alt=""></div>
+													</div>
+													<li class="nav__subdropdown-item-second"><a class="nav__subdropdown-link" href="#">Errors Seeds Silver Auto</a></li>
+													<li class="nav__subdropdown-item-second"><a class="nav__subdropdown-link" href="#">Errors Seeds Silver Auto Feminised</a></li>
+													<li class="nav__subdropdown-item-second"><a class="nav__subdropddown-link" href="#">Errors Seds Silver Regular</a></li>
+													<li class="nav__subdropdown-item-second"><a class="nav__subdropdown-link" href="#">Errors Seds Silver Feminised</a></li>
+													<li class="nav__subdropdown-item-second"><a class="nav__subdropdown-link" href="#">Errors Seds Silver Cup</a></li>
+												</ul>
+											</li>
+											<li class="nav__subdropdown-item nav__dropdown-item_arrow"><a class="nav__subdropdown-link" href="#">Errors Seeds Silver Auto Feminised</a></li>
+											<li class="nav__subdropdown-item nav__dropdown-item_arrow"><a class="nav__subdropddown-link" href="#">Errors Seds Silver Regular</a></li>
+											<li class="nav__subdropdown-item nav__dropdown-item_arrow"><a class="nav__subdropdown-link" href="#">Errors Seds Silver Feminised</a></li>
+											<li class="nav__subdropdown-item nav__dropdown-item_arrow"><a class="nav__subdropdown-link" href="#">Errors Seds Silver Cup</a></li>
+										</ul>
+									</div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Errors Seeds Gold</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Комплекты Errors Seeds</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">CBD сорта</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Испания</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Голандия</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">США</a></div>
+									<div class="nav__dropdown-item nav__dropdown-item_arrow"><a class="nav__subpdropdown-link" href="#">Чехия</a></div>
+								</div>
+							</li>
+							<li class="nav__item nav__item_icon nav__item_arrow"><a class="nav__item-link" href="">Категории</a></li>
+							<li class="nav__item nav__item_icon nav__item_arrow"><a class="nav__item-link" href="">Генетика</a></li>
+							<li class="nav__item nav__item_icon nav__item_arrow"><a class="nav__item-link" href="">По вкусу</a></li>
+							<li class="nav__item nav__item_icon"> <a class="nav__item-link" href="">По эффекту</a></li>
+							<li class="nav__item nav__item_icon"> <a class="nav__item-link" href="">Оборудование</a></li>
+							<li class="nav__item nav__item_icon"> <a class="nav__item-link" href="">Удобрения</a></li>
+							<li class="nav__item nav__item_icon"><a class="nav__item-link" href="">Сувениры</a></li>
+							<li class="nav__item nav__item_icon nav__item_last"><a class="nav__item-link" href="">Канапродукция</a></li>
+							<ul class="nav__interactivity"> 
+								<li class="nav__cart"><img class="nav__cart-icon" src="images/main/header__cart-icon.svg" alt=""><span class="nav__interactivity-title">Корзина</span></li>
+								<li class="nav__liked"><img class="nav__liked-icon" src="images/main/header__liked-icon.svg" alt=""><span class="nav__interactivity-title">Избранное</span></li>
+								<li class="nav__comparison"><img class="nav__comparison-icon" src="images/main/header__comparison.svg" alt=""><span class="nav__interactivity-title">Сравнение</span></li>
+							</ul>
+							<ul class="nav__about">
+								<li class="nav__about-item nav__about-item_first"><a class="nav__about-link" href="#">О магазине </a></li>
+								<li class="nav__about-item"><a class="nav__about-link" href="#">Закон</a></li>
+								<li class="nav__about-item"><a class="nav__about-link" href="#">Новости</a></li>
+								<li class="nav__about-item nav__about-item_cooperation"><a class="nav__about-link nav__about-link_arrow" href="#">Сотрудничество</a>
+									<ul class="nav__about-dropdown">
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+										<li class="nav__dropdown-about-item"><a href="#">Сотрудничество</a></li>
+									</ul>
+								</li>
+								<li class="nav__about-item nav__about-item_last"><a class="nav__about-link" href="#">Бонусная программа</a></li>
+							</ul>
+						</ul>
+					</div>
+					<div class="header__search-mobile"><img class="header__search-mobile-icon" src="images/main/header__search-icon.svg" alt=""></div>
+					<div class="header__search-holder"> 
+						<input class="header__search-input" type="text" name="search">
+						<div class="header__search-btn"><img src="images/main/header__search-icon.svg" alt=""></div>
+						<div class="search-dropdown">
+							<div class="search-dropdown__item"><img class="search-dropdown__item-img" src="images/main/search-results/search-result-thumb.jpg" alt="">
+								<div class="search-dropdown__item-container"><span class="search-dropdown__item-title">Auto Rhino Feminised I Green House Seeds</span>
+									<div class="search-dropdown__item-price-container"><span class="search-dropdown__item-price-discount">41.00₴</span><span class="search-dropdown__item-price-current">41.00₴</span></div>
+								</div>
+							</div>
+							<div class="search-dropdown__item"><img class="search-dropdown__item-img" src="images/main/search-results/search-result-thumb.jpg" alt="">
+								<div class="search-dropdown__item-container"><span class="search-dropdown__item-title">Auto Rhino Feminised I Green House Seeds</span>
+									<div class="search-dropdown__item-price-container"><span class="search-dropdown__item-price-discount">41.00₴</span><span class="search-dropdown__item-price-current">41.00₴</span></div>
+								</div>
+							</div>
+							<div class="search-dropdown__item"><img class="search-dropdown__item-img" src="images/main/search-results/search-result-thumb.jpg" alt="">
+								<div class="search-dropdown__item-container"><span class="search-dropdown__item-title">Auto Rhino Feminised I Green House Seeds</span>
+									<div class="search-dropdown__item-price-container"><span class="search-dropdown__item-price-discount">41.00₴</span><span class="search-dropdown__item-price-current">41.00₴</span></div>
+								</div>
+							</div>
+							<div class="search-dropdown__item"><img class="search-dropdown__item-img" src="images/main/search-results/search-result-thumb.jpg" alt="">
+								<div class="search-dropdown__item-container"><span class="search-dropdown__item-title">Auto Rhino Feminised I Green House Seeds</span>
+									<div class="search-dropdown__item-price-container"><span class="search-dropdown__item-price-discount">41.00₴</span><span class="search-dropdown__item-price-current">41.00₴</span></div>
+								</div>
+							</div>
+							<div class="search-dropdown__item"><img class="search-dropdown__item-img" src="images/main/search-results/search-result-thumb.jpg" alt="">
+								<div class="search-dropdown__item-container"><span class="search-dropdown__item-title">Auto Rhino Feminised I Green House Seeds</span>
+									<div class="search-dropdown__item-price-container"><span class="search-dropdown__item-price-discount">41.00₴</span><span class="search-dropdown__item-price-current">41.00₴</span></div>
+								</div>
+							</div><span class="search-dropdown__total-results">Все результаты поиска (8324)</span>
+						</div>
+					</div>
+					<div class="header__liked"><img class="header__liked-icon" src="images/main/header__liked-icon.svg" alt=""></div>
+					<div class="header__comparison"><img class="header__comparison-icon" src="images/main/header__comparison.svg" alt=""></div>
+					<div class="header__community"><img class="header__liked-icon" src="images/main/header__community-icon.svg" alt="">
+						<div class="header__community-contacts contacts header__community-contacts_dropdown">
+							<ul class="contacts__list">
+								<li class="contacts__item"> <img src="images/contacts/contacts__whatsapp-icon.svg" alt=""><a class="contacts__title" href="#">Чат на сайте</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__viber-icon.svg" alt=""><a class="contacts__title" href="#">Viber</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__telegram-icon.svg" alt=""><a class="contacts__title" href="#">Telegram</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title contacts__title_flex" href="#">0-800-750-849<span class="contacts__descr">
+											c 8:00 до 22:00(пн-вс)Бесплатно с любого оператора</span></a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+								<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__cart"><img class="header__cart-icon" src="images/main/header__cart-icon.svg" alt=""><span class="header__cart-counter header__cart-counter_active">2 </span></div>
+					<div class="header__account"><img class="header__account-icon" src="images/main/header__account-icon.svg" alt=""><span class="header__account-title">Личный кабинет</span></div>
+				</div>
+			</div>
+		</header>
+		<!--catalog-page-->
+		<main class="main">
+			<div class="container-native">
+						<ul class="breadcrumbs">
+							<li><a class="breadcrumbs__item" href="#">Каталог</a>
+							</li>
+							<li><span class="breadcrumbs__item breadcrumbs__item_active">Фотоцветущие сорта</span>
+							</li>
+						</ul>
+				<h1 class="catalog-main__title">Фотоцветущие сорта</h1>
+				<div class="catalog-descr">
+					<div class="container-native">
+						<div class="catalog-descr__col">
+							<p class="catalog-descr__content">Errors Seeds – магазин семян конопли, и он предоставляет действительно обширный ассортимент разнообразных сортов. Здесь вы можете отыскать стрейн, идеально подходящий для любых конкретных условий. Крошечный и уютный стелс-гроубокс, оборудованный в старой тумбочке? Отлично! Огромный гроурум, в котором при желании можно устроить настоящий “огород”?</p>
+						</div>
+						<div class="catalog-descr__col">
+							<p class="catalog-descr__content">Errors Seeds – магазин семян конопли, и он предоставляет действительно обширный ассортимент разнообразных сортов. Здесь вы можете отыскать стрейн, идеально подходящий для любых конкретных условий. Крошечный и уютный стелс-гроубокс, оборудованный в старой тумбочке? Отлично! Огромный гроурум, в котором при желании можно устроить настоящий “огород”?</p>
+						</div>
+					</div>
+				</div>
+				<div class="category"><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Auto</span></div></a><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Auto</span></div></a><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Auto</span></div></a><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Автоцветущие феминизированные сорта</span></div></a><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Auto</span></div></a><a class="category__item" href="#"><img class="category_img" src="images/catalog/catalog-thumb.png" alt="">
+						<div class="category__title-holder"><span class="category__title">Auto</span></div></a></div>
+				<div class="swiper seolink seolink_first">
+					<div class="swiper-wrapper">
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+					</div>
+					<div class="seolink__prev-btn"><img class="seolink__btn-icon" src="images/catalog/seolink_navigation-btn.svg" alt=""></div>
+					<div class="seolink__next-btn"><img class="seolink__btn-icon" src="images/catalog/seolink_navigation-btn.svg" alt=""></div>
+				</div>
+				<div class="swiper seolink seolink_second">
+					<div class="swiper-wrapper">
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+								<div class="swiper-slide seolink__item"><span class="seolink__title">Lorem ipsum</span><span class="seolink__counter">10</span></div>
+					</div>
+					<div class="seolink__prev-btn"><img class="seolink__btn-icon" src="images/catalog/seolink_navigation-btn.svg" alt=""></div>
+					<div class="seolink__next-btn"><img class="seolink__btn-icon" src="images/catalog/seolink_navigation-btn.svg" alt=""></div>
+				</div>
+				<div class="catalog-descr catalog-descr_second">
+					<h2 class="catalog-descr__title">Феминизированные семена автоцветущего сорта</h2>
+					<div class="catalog-descr__col">
+						<p class="catalog-descr__content">Errors Seeds – магазин семян конопли, и он предоставляет действительно обширный ассортимент разнообразных сортов. Здесь вы можете отыскать стрейн, идеально подходящий для любых конкретных условий. Крошечный и уютный стелс-гроубокс, оборудованный в старой тумбочке? Отлично! Огромный гроурум, в котором при желании можно устроить настоящий “огород”?</p>
+					</div>
+					<div class="catalog-descr__col">
+						<p class="catalog-descr__content">Errors Seeds – магазин семян конопли, и он предоставляет действительно обширный ассортимент разнообразных сортов. Здесь вы можете отыскать стрейн, идеально подходящий для любых конкретных условий. Крошечный и уютный стелс-гроубокс, оборудованный в старой тумбочке? Отлично! Огромный гроурум, в котором при желании можно устроить настоящий “огород”?</p>
+					</div>
+				</div>
+				<div class="pricing">
+					<h2 class="pricing__title">Цена Buba Kush </h2>
+					<table class="price-table">
+						<thead class="price-table__head">
+							<tr class="price-table__head-row">
+								<td class="price-table__head-cel--first">Buba Kush</td>
+								<td class="price-table__head-cel--last">Цена</td>
+							</tr>
+						</thead>
+						<tbody class="price-table__body">
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+							<tr class="price-table__row">
+								<td class="price-table__cel--first">Lorem ipsum</td>
+								<td class="price-table__cel--last">$ 15.75</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="faq">
+					<h2 class="faq__title">Вопросы и ответы</h2>
+					<div class="faq__item"><span class="faq__item-title">Какие семена конопли Автоцветущие сорта самые дешевые?</span>
+						<div class="faq__dropdown"><span class="faq__dropdown-content">Самые дешевые семена конопли Автоцветущие сорта в интернет-магазине Errors Seeds являются:</span>
+							<ul class="faq__dropdown__list">
+								<li class="faq__dropdown-item">Auto Northern Lights Silver</li>
+								<li class="faq__dropdown-item">Auto MIX Silver</li>
+								<li class="faq__dropdown-item">Auto Power Plant Silver</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faq__item"><span class="faq__item-title">Какие семена конопли Автоцветущие сорта самые дешевые?</span>
+						<div class="faq__dropdown"><span class="faq__dropdown-content">Самые дешевые семена конопли Автоцветущие сорта в интернет-магазине Errors Seeds являются:</span>
+							<ul class="faq__dropdown__list">
+								<li class="faq__dropdown-item">Auto Northern Lights Silver</li>
+								<li class="faq__dropdown-item">Auto MIX Silver</li>
+								<li class="faq__dropdown-item">Auto Power Plant Silver</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faq__item"><span class="faq__item-title">Какие семена конопли Автоцветущие сорта самые дешевые?</span>
+						<div class="faq__dropdown"><span class="faq__dropdown-content">Самые дешевые семена конопли Автоцветущие сорта в интернет-магазине Errors Seeds являются:</span>
+							<ul class="faq__dropdown__list">
+								<li class="faq__dropdown-item">Auto Northern Lights Silver</li>
+								<li class="faq__dropdown-item">Auto MIX Silver</li>
+								<li class="faq__dropdown-item">Auto Power Plant Silver</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faq__item"><span class="faq__item-title">Какие семена конопли Автоцветущие сорта самые дешевые?</span>
+						<div class="faq__dropdown"><span class="faq__dropdown-content">Самые дешевые семена конопли Автоцветущие сорта в интернет-магазине Errors Seeds являются:</span>
+							<ul class="faq__dropdown__list">
+								<li class="faq__dropdown-item">Auto Northern Lights Silver</li>
+								<li class="faq__dropdown-item">Auto MIX Silver</li>
+								<li class="faq__dropdown-item">Auto Power Plant Silver</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__row">
+				<div class="container">
+					<div class="footer__subscription"><span class="footer__subscription-descr">Подписывайся, чтобы первым узнать про акции и выгодные предложения</span>
+						<div class="footer__subscription-holder"> 
+							<input class="footer__subscription-input" type="text" name="subscription" placeholder="Email">
+							<button class="footer__subscription-submit" type="submit">Подпишись</button>
+						</div>
+						<div class="footer__socials">
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/facebook_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/instagram_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/telegram_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/viber_icon.svg" alt=""></div>
+							<div class="footer__social-item"><img class="footer__social-icon" src="images/footer/youtube_icon.svg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__row footer__row_middle">
+				<div class="container-native container_middle">
+					<div class="footer__about"> 
+						<div class="footer__logo"><img class="footer__logo-img" src="images/footer/footer__logo.svg" alt=""></div>
+						<div class="footer__help"><a class="footer__contact-us" href="#">Связь с директором</a>
+							<div class="footer_help-item"><img class="footer__help-handset" src="images/footer/help_handset.svg" alt=""><span class="footer__help-title">Помощь и консультация</span><img class="footer__help-arrow" src="images/footer/help-arrow.svg" alt="">
+								<div class="contacts contacts_footer">
+									<ul class="contacts__list">
+										<li class="contacts__item"> <img src="images/contacts/contacts__whatsapp-icon.svg" alt=""><a class="contacts__title" href="#">Чат на сайте</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__viber-icon.svg" alt=""><a class="contacts__title" href="#">Viber</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__telegram-icon.svg" alt=""><a class="contacts__title" href="#">Telegram</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title contacts__title_flex" href="#">0-800-750-849<span class="contacts__descr">
+													c 8:00 до 22:00(пн-вс)Бесплатно с любого оператора</span></a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+										<li class="contacts__item"> <img src="images/contacts/contacts__tel-icon.svg" alt=""><a class="contacts__title" href="#">+38 093 00 00 849</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="footer__nav">
+						<div class="footer__nav-item"><span class="footer_nav-title">Информация о компании</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">О магазине</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Закон</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Бонусная программа</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Сотрудничество</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item"><span class="footer_nav-title">Помощь</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Контакты</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Новости</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Доставка</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Оплата</a></li>
+							</ul>
+						</div>
+						<div class="footer__nav-item"><span class="footer_nav-title">Сервисы</span>
+							<ul class="footer__list">
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Форум</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Медицина</a></li>
+								<li class="footer_list-item"><a class="footer_list-link" href="#">Лампы</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="footer__row footer__row_bottom">
+				<div class="container container_bottom"><span class="footer__copyright">ⓒ Errors Seeds Company 2009-2022</span>
+					<div class="footer__credits"><img class="footer__credits-item" src="images/footer/credits/visa.png" alt=""><img class="footer__credits-item" src="images/footer/credits/maestro.png" alt=""><img class="footer__credits-item" src="images/footer/credits/mastercard.png" alt=""><img class="footer__credits-item" src="images/footer/credits/paypal.png" alt=""><img class="footer__credits-item" src="images/footer/credits/webmoney.png" alt=""></div><span class="footer__policy">Политика конфиденциальности</span>
+				</div>
+			</div>
+		</footer>
+		<div class="testing-pages"><span>Pages</span>
+			<div class="testing-holder"><a href="/index.html">Main </a><a href="/catalog.html">Catalolg</a><a href="/order.html">order</a></div>
+		</div>
+	</body>
+</html>
